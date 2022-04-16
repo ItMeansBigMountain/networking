@@ -1,0 +1,9 @@
+- name: tempalte
+  hosts: routers
+  gather_facts: no
+  tasks:  
+
+  # python file name
+    - ansible_module_template:
+        var1: 'CUSTOM STRING'
+        var2: [ 100 , 90 , 80 , 70 , 60 , 50]

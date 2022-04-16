@@ -1,0 +1,16 @@
+---
+- name: General Config
+  hosts: routers
+  tasks:
+  
+    - name: Add Banner
+      ios_banner:
+        banner: login
+        text: learning network automation!!!
+        state: present
+
+    - name: Add loopback
+      ios_interface:
+        name: loopback21
+        state: present
+

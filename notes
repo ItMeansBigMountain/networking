@@ -1,0 +1,3 @@
+RUNNING PLAYBOOK
+    ansible-playbook PLAYBOOK_NAME.yml
+    
